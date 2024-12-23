@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://192.168.100.49:1313/tags/hugo/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
+    <loc>http://192.168.100.49:1313/post/2024-12-23-moving-to-hugo/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
+    <loc>http://192.168.100.49:1313/post/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
+    <loc>http://192.168.100.49:1313/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
+    <loc>http://192.168.100.49:1313/tags/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
+    <loc>http://192.168.100.49:1313/tags/website/</loc>
+    <lastmod>2024-12-23T16:43:00+01:00</lastmod>
+  </url><url>
     <loc>http://192.168.100.49:1313/tags/black-screen/</loc>
     <lastmod>2024-06-10T16:43:00+01:00</lastmod>
   </url><url>
@@ -9,15 +27,6 @@
     <lastmod>2024-06-10T16:43:00+01:00</lastmod>
   </url><url>
     <loc>http://192.168.100.49:1313/post/2024-06-10-cwwk-black-screen/</loc>
-    <lastmod>2024-06-10T16:43:00+01:00</lastmod>
-  </url><url>
-    <loc>http://192.168.100.49:1313/post/</loc>
-    <lastmod>2024-06-10T16:43:00+01:00</lastmod>
-  </url><url>
-    <loc>http://192.168.100.49:1313/</loc>
-    <lastmod>2024-06-10T16:43:00+01:00</lastmod>
-  </url><url>
-    <loc>http://192.168.100.49:1313/tags/</loc>
     <lastmod>2024-06-10T16:43:00+01:00</lastmod>
   </url><url>
     <loc>http://192.168.100.49:1313/tags/topton/</loc>

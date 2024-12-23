@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/website/</link>
+    <description>Recent content in Website on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Mon, 23 Dec 2024 16:43:00 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Moving to Hugo</title>
+      <link>http://192.168.100.49:1313/post/2024-12-23-moving-to-hugo/</link>
+      <pubDate>Mon, 23 Dec 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2024-12-23-moving-to-hugo/</guid>
+      <description>&lt;h2 id=&#34;moving-to-hugo&#34;&gt;Moving to Hugo&lt;/h2&gt;</description>
+    </item>
+  </channel>
+</rss>
