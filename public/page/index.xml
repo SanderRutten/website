@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Rutten.me</title>
+    <link>http://192.168.100.49:1313/page/</link>
+    <description>Recent content in Pages on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <atom:link href="http://192.168.100.49:1313/page/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About me</title>
+      <link>http://192.168.100.49:1313/page/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/page/about/</guid>
+      <description>&lt;p&gt;Hi there,&lt;/p&gt;&#xA;&lt;p&gt;My name is Sander Rutten.&#xA;Born on April 16th, 1985.&#xA;I was born, raised and still living near Nijmegen, The Netherlands.&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-nickname-and-a-brief-history&#34;&gt;My nickname, and a brief history&lt;/h3&gt;&#xA;&lt;p&gt;My online nickname is &lt;em&gt;Nakebod&lt;/em&gt;.&#xA;Don&amp;rsquo;t confuse it with something like &lt;em&gt;naked body&lt;/em&gt;. Although my name is sometimes shorted to just &lt;em&gt;Naked&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;p&gt;So what is the history behind my nickname? I even needed to think about how it all started, since it is just &lt;strong&gt;Nakebod&lt;/strong&gt; for years now.&#xA;But that is not how it originally started. &lt;em&gt;suspense music&amp;hellip;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

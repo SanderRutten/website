@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Rutten.me</title>
+    <link>http://192.168.100.49:1313/post/</link>
+    <description>Recent content in Posts on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Mon, 10 Jun 2024 16:43:00 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CWWK Black Screen</title>
+      <link>http://192.168.100.49:1313/post/2024-06-10-cwwk-black-screen/</link>
+      <pubDate>Mon, 10 Jun 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2024-06-10-cwwk-black-screen/</guid>
+      <description>&lt;h2 id=&#34;cwwktopton-black-screen&#34;&gt;CWWK/TopTon black screen&lt;/h2&gt;&#xA;&lt;p&gt;Recently I have bought a &lt;a href=&#34;https://cwwk.net/collections/frontpage/products/cwwk-x86-p5-super-mini-router-12th-gen-intel-n100-ddr5-4800mhz-firewall-pc-2x-i226-v-2-5g-lan-fanless-mini-pc&#34;&gt;CWWK X86 P5 SUPER Mini PC&lt;/a&gt; for my &lt;a href=&#34;https://opnsense.org&#34;&gt;OPNSense&lt;/a&gt; firewall.&#xA;I bought the machine without storage and RAM, so I needed to provide my own.&lt;/p&gt;&#xA;&lt;p&gt;My first idea was to replace my current &lt;a href=&#34;https://proxmox.org&#34;&gt;Proxmox&lt;/a&gt; homeserver so I went with 32GB of RAM.&#xA;Later I decided that I only wanted my firewall on this machine, so I didn&amp;rsquo;t need much RAM and bought 8GB.&#xA;The memory modules I did test are&#xA;&lt;a href=&#34;https://www.corsair.com/us/en/p/memory/cmsx32gx5m2a4800c40/vengeance-ddr5-sodimm-32gb-2x16gb-ddr5-4800-pc5-38400-c40-1-1v-cmsx32gx5m2a4800c40&#34;&gt;Corsair VENGEANCE DDR5 SODIMM 32GB&lt;/a&gt;&#xA;and &lt;a href=&#34;https://eu.crucial.com/memory/ddr5/ct8g48c40u5&#34;&gt;Crucial RAM 8GB DDR5&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Updated Theme</title>
+      <link>http://192.168.100.49:1313/post/2023-06-09-updated-theme/</link>
+      <pubDate>Fri, 09 Jun 2023 19:00:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2023-06-09-updated-theme/</guid>
+      <description>&lt;h2 id=&#34;updated-theme&#34;&gt;Updated theme&lt;/h2&gt;&#xA;&lt;p&gt;Since I switched to Jekyll I used &lt;a href=&#34;https://beautifuljekyll.com&#34;&gt;Beautiful Jekyll&lt;/a&gt; as website theme.&#xA;It is not bad but it wasn&amp;rsquo;t great either.&#xA;So after viewing a few themes and testing, I have a winner. And it is&amp;hellip; &lt;a href=&#34;http://www.csrhymes.com/bulma-clean-theme/&#34;&gt;Bulma Clean Theme&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Jekyll</title>
+      <link>http://192.168.100.49:1313/post/2023-05-02-migrating-to-jekyll/</link>
+      <pubDate>Tue, 02 May 2023 13:34:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2023-05-02-migrating-to-jekyll/</guid>
+      <description>&lt;h2 id=&#34;migrating-from-wordpress-to-jekyll&#34;&gt;Migrating from Wordpress to Jekyll&lt;/h2&gt;&#xA;&lt;p&gt;Today I have started the migration of my Wordpress website to &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;. I will also experiment with hosting my site with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;.&#xA;Most of the content is already migrated, but there is some manual work left. It could be possible that a few images are missing or layout is a bit weird.&lt;/p&gt;&#xA;&lt;p&gt;My site isn&amp;rsquo;t very big or interesting in general. So I will probably delete some articles and only keep the most useful or interesting ones.&lt;br&gt;&#xA;I mean, who cares that my site got a SSL certificate back in 2014? Ok, back then it wasn&amp;rsquo;t that common, but still. So&amp;hellip; &lt;em&gt;delete post&lt;/em&gt; aaaand it&amp;rsquo;s gone.&#xA;Only a couple of pages left which could be useful for other people.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My ESPHome / Home Assistant enabled chicken coop door</title>
+      <link>http://192.168.100.49:1313/post/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door/</link>
+      <pubDate>Fri, 01 Jul 2022 20:14:51 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://192.168.100.49:1313/images/2022/07/01/PXL_20220630_161406624.jpg&#34;&gt;&lt;img src=&#34;http://192.168.100.49:1313/images/2022/07/01/PXL_20220630_161406624-150x150.jpg&#34; alt=&#34;Inside the chicken coop&#34;&gt;&lt;/a&gt;{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.&lt;/p&gt;&#xA;&lt;p&gt;In my &lt;a href=&#34;https://www.home-assistant.io&#34;&gt;Home Assistant&lt;/a&gt; installation I’m already using the &lt;a href=&#34;https://esphome.io&#34;&gt;ESPHome&lt;/a&gt; integration for other small sensors in my home. So why not make use of ESPHome?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UniFi Guest Portal with IPv6</title>
+      <link>http://192.168.100.49:1313/post/2018-11-23-unifi-guest-portal-with-ipv6/</link>
+      <pubDate>Fri, 23 Nov 2018 12:17:56 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2018-11-23-unifi-guest-portal-with-ipv6/</guid>
+      <description>&lt;p&gt;For some reason Ubiquiti / UniFi doesn’t really love IPv6 after all those years. It took quite some time before the UniFi Controller itself supported IPv6. Beta IPv6 implementation started almost a year ago with the release of UniFi 5.7.7. But this doesn’t include the devices. Or at least not my Ubiquity AP-AC Lite. You can only configure IPv4 on the management interface.&lt;/p&gt;&#xA;&lt;p&gt;Luckily this doesn’t mean that your mobile devices can’t get IPv6, this works perfectly. Well perfectly… As long as you don’t use the Guest Portal for that SSID.&lt;br&gt;&#xA;If you want to use the Guest Portal the accesspoint just drops all IPv6 traffic on your guest network.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>VMWare ESXi 6.7 and I219-V</title>
+      <link>http://192.168.100.49:1313/post/2018-09-07-vmware-esxi-6-7-and-i219-v/</link>
+      <pubDate>Fri, 07 Sep 2018 10:31:14 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2018-09-07-vmware-esxi-6-7-and-i219-v/</guid>
+      <description>&lt;p&gt;A free tip for people with a (to new?) Intel I219V (Or Intel I219-V for search results 🙂&lt;/p&gt;&#xA;&lt;p&gt;Recently I begun with the upgrade of my VMWare server, running on an Intel i3-6100 6th gen. My current motherboard’s chipset was only able to handle 6th and 7th gen and I wanted to upgrade to the Intel i5-8400 8th gen. So I also needed a new motherboard: &lt;strong&gt;&lt;a href=&#34;https://www.asrock.com/mb/Intel/H370M-ITXac/index.asp&#34;&gt;ASRock H370M-ITX/ac&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This board has 2 network interfaces, the Intel I211AT and an Intel I219V. And the latter is a bit picky in VMWare.&#xA;The I219V should be supported in ESXi. So no problem, right? Untill I installed ESXi 6.7 and had only 1 network card available.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Project Pi-Fi: RaspberriPI as travel router</title>
+      <link>http://192.168.100.49:1313/post/2018-08-01-project-pifi-raspberripi-as-travel-router/</link>
+      <pubDate>Wed, 01 Aug 2018 10:00:35 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2018-08-01-project-pifi-raspberripi-as-travel-router/</guid>
+      <description>&lt;h1 id=&#34;span-classez-toc-section-idthe_probleme280a6spanthe-problemspan-classez-toc-section-endspan&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;The problem…&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/h1&gt;&#xA;&lt;p&gt;While traveling around and visiting some nice remote campgrounds it sometimes occurs that there is only WiFI at the central building, or it is limited to 1 device only. And if you don’t have much mobile data… Problem!&lt;br&gt;&#xA;In rare occasions it also happens that cellphone reception is quite eh, non existent 🙂&lt;br&gt;&#xA;Even with my limited internet usage during holidays I’d like to search/plan trips or send some pictures to family and friends to make them jealous.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

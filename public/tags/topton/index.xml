@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TopTon on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/topton/</link>
+    <description>Recent content in TopTon on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Mon, 10 Jun 2024 16:43:00 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/topton/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CWWK Black Screen</title>
+      <link>http://192.168.100.49:1313/post/2024-06-10-cwwk-black-screen/</link>
+      <pubDate>Mon, 10 Jun 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2024-06-10-cwwk-black-screen/</guid>
+      <description>&lt;h2 id=&#34;cwwktopton-black-screen&#34;&gt;CWWK/TopTon black screen&lt;/h2&gt;&#xA;&lt;p&gt;Recently I have bought a &lt;a href=&#34;https://cwwk.net/collections/frontpage/products/cwwk-x86-p5-super-mini-router-12th-gen-intel-n100-ddr5-4800mhz-firewall-pc-2x-i226-v-2-5g-lan-fanless-mini-pc&#34;&gt;CWWK X86 P5 SUPER Mini PC&lt;/a&gt; for my &lt;a href=&#34;https://opnsense.org&#34;&gt;OPNSense&lt;/a&gt; firewall.&#xA;I bought the machine without storage and RAM, so I needed to provide my own.&lt;/p&gt;&#xA;&lt;p&gt;My first idea was to replace my current &lt;a href=&#34;https://proxmox.org&#34;&gt;Proxmox&lt;/a&gt; homeserver so I went with 32GB of RAM.&#xA;Later I decided that I only wanted my firewall on this machine, so I didn&amp;rsquo;t need much RAM and bought 8GB.&#xA;The memory modules I did test are&#xA;&lt;a href=&#34;https://www.corsair.com/us/en/p/memory/cmsx32gx5m2a4800c40/vengeance-ddr5-sodimm-32gb-2x16gb-ddr5-4800-pc5-38400-c40-1-1v-cmsx32gx5m2a4800c40&#34;&gt;Corsair VENGEANCE DDR5 SODIMM 32GB&lt;/a&gt;&#xA;and &lt;a href=&#34;https://eu.crucial.com/memory/ddr5/ct8g48c40u5&#34;&gt;Crucial RAM 8GB DDR5&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

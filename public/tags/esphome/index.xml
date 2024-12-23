@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESPHome on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/esphome/</link>
+    <description>Recent content in ESPHome on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Fri, 01 Jul 2022 20:14:51 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/esphome/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My ESPHome / Home Assistant enabled chicken coop door</title>
+      <link>http://192.168.100.49:1313/post/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door/</link>
+      <pubDate>Fri, 01 Jul 2022 20:14:51 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://192.168.100.49:1313/images/2022/07/01/PXL_20220630_161406624.jpg&#34;&gt;&lt;img src=&#34;http://192.168.100.49:1313/images/2022/07/01/PXL_20220630_161406624-150x150.jpg&#34; alt=&#34;Inside the chicken coop&#34;&gt;&lt;/a&gt;{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.&lt;/p&gt;&#xA;&lt;p&gt;In my &lt;a href=&#34;https://www.home-assistant.io&#34;&gt;Home Assistant&lt;/a&gt; installation I’m already using the &lt;a href=&#34;https://esphome.io&#34;&gt;ESPHome&lt;/a&gt; integration for other small sensors in my home. So why not make use of ESPHome?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

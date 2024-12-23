@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ESX on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/esx/</link>
+    <description>Recent content in ESX on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Fri, 07 Sep 2018 10:31:14 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/esx/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>VMWare ESXi 6.7 and I219-V</title>
+      <link>http://192.168.100.49:1313/post/2018-09-07-vmware-esxi-6-7-and-i219-v/</link>
+      <pubDate>Fri, 07 Sep 2018 10:31:14 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2018-09-07-vmware-esxi-6-7-and-i219-v/</guid>
+      <description>&lt;p&gt;A free tip for people with a (to new?) Intel I219V (Or Intel I219-V for search results 🙂&lt;/p&gt;&#xA;&lt;p&gt;Recently I begun with the upgrade of my VMWare server, running on an Intel i3-6100 6th gen. My current motherboard’s chipset was only able to handle 6th and 7th gen and I wanted to upgrade to the Intel i5-8400 8th gen. So I also needed a new motherboard: &lt;strong&gt;&lt;a href=&#34;https://www.asrock.com/mb/Intel/H370M-ITXac/index.asp&#34;&gt;ASRock H370M-ITX/ac&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This board has 2 network interfaces, the Intel I211AT and an Intel I219V. And the latter is a bit picky in VMWare.&#xA;The I219V should be supported in ESXi. So no problem, right? Untill I installed ESXi 6.7 and had only 1 network card available.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UniFi on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/unifi/</link>
+    <description>Recent content in UniFi on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Fri, 23 Nov 2018 12:17:56 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/unifi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UniFi Guest Portal with IPv6</title>
+      <link>http://192.168.100.49:1313/post/2018-11-23-unifi-guest-portal-with-ipv6/</link>
+      <pubDate>Fri, 23 Nov 2018 12:17:56 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2018-11-23-unifi-guest-portal-with-ipv6/</guid>
+      <description>&lt;p&gt;For some reason Ubiquiti / UniFi doesn’t really love IPv6 after all those years. It took quite some time before the UniFi Controller itself supported IPv6. Beta IPv6 implementation started almost a year ago with the release of UniFi 5.7.7. But this doesn’t include the devices. Or at least not my Ubiquity AP-AC Lite. You can only configure IPv4 on the management interface.&lt;/p&gt;&#xA;&lt;p&gt;Luckily this doesn’t mean that your mobile devices can’t get IPv6, this works perfectly. Well perfectly… As long as you don’t use the Guest Portal for that SSID.&lt;br&gt;&#xA;If you want to use the Guest Portal the accesspoint just drops all IPv6 traffic on your guest network.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

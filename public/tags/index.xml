@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Rutten.me</title>
+    <link>http://192.168.100.49:1313/tags/</link>
+    <description>Recent content in Tags on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Mon, 10 Jun 2024 16:43:00 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Black Screen</title>
+      <link>http://192.168.100.49:1313/tags/black-screen/</link>
+      <pubDate>Mon, 10 Jun 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/black-screen/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CWWK</title>
+      <link>http://192.168.100.49:1313/tags/cwwk/</link>
+      <pubDate>Mon, 10 Jun 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/cwwk/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TopTon</title>
+      <link>http://192.168.100.49:1313/tags/topton/</link>
+      <pubDate>Mon, 10 Jun 2024 16:43:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/topton/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Jekyll</title>
+      <link>http://192.168.100.49:1313/tags/jekyll/</link>
+      <pubDate>Fri, 09 Jun 2023 19:00:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Theme</title>
+      <link>http://192.168.100.49:1313/tags/theme/</link>
+      <pubDate>Fri, 09 Jun 2023 19:00:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/theme/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wordpress</title>
+      <link>http://192.168.100.49:1313/tags/wordpress/</link>
+      <pubDate>Tue, 02 May 2023 13:34:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESPHome</title>
+      <link>http://192.168.100.49:1313/tags/esphome/</link>
+      <pubDate>Fri, 01 Jul 2022 20:14:51 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/esphome/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Home Assistant</title>
+      <link>http://192.168.100.49:1313/tags/home-assistant/</link>
+      <pubDate>Fri, 01 Jul 2022 20:14:51 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/home-assistant/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>IPv6</title>
+      <link>http://192.168.100.49:1313/tags/ipv6/</link>
+      <pubDate>Fri, 23 Nov 2018 12:17:56 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/ipv6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>http://192.168.100.49:1313/tags/technology/</link>
+      <pubDate>Fri, 23 Nov 2018 12:17:56 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>UniFi</title>
+      <link>http://192.168.100.49:1313/tags/unifi/</link>
+      <pubDate>Fri, 23 Nov 2018 12:17:56 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/unifi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>ESX</title>
+      <link>http://192.168.100.49:1313/tags/esx/</link>
+      <pubDate>Fri, 07 Sep 2018 10:31:14 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/esx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VMWare</title>
+      <link>http://192.168.100.49:1313/tags/vmware/</link>
+      <pubDate>Fri, 07 Sep 2018 10:31:14 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/tags/vmware/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

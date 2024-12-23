@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Website on Rutten.me</title>
+    <link>http://192.168.100.49:1313/categories/website/</link>
+    <description>Recent content in Website on Rutten.me</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <managingEditor>sander@rutten.me (Sander Rutten)</managingEditor>
+    <webMaster>sander@rutten.me (Sander Rutten)</webMaster>
+    <lastBuildDate>Fri, 09 Jun 2023 19:00:00 +0100</lastBuildDate>
+    <atom:link href="http://192.168.100.49:1313/categories/website/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Updated Theme</title>
+      <link>http://192.168.100.49:1313/post/2023-06-09-updated-theme/</link>
+      <pubDate>Fri, 09 Jun 2023 19:00:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2023-06-09-updated-theme/</guid>
+      <description>&lt;h2 id=&#34;updated-theme&#34;&gt;Updated theme&lt;/h2&gt;&#xA;&lt;p&gt;Since I switched to Jekyll I used &lt;a href=&#34;https://beautifuljekyll.com&#34;&gt;Beautiful Jekyll&lt;/a&gt; as website theme.&#xA;It is not bad but it wasn&amp;rsquo;t great either.&#xA;So after viewing a few themes and testing, I have a winner. And it is&amp;hellip; &lt;a href=&#34;http://www.csrhymes.com/bulma-clean-theme/&#34;&gt;Bulma Clean Theme&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Migrating to Jekyll</title>
+      <link>http://192.168.100.49:1313/post/2023-05-02-migrating-to-jekyll/</link>
+      <pubDate>Tue, 02 May 2023 13:34:00 +0100</pubDate><author>sander@rutten.me (Sander Rutten)</author>
+      <guid>http://192.168.100.49:1313/post/2023-05-02-migrating-to-jekyll/</guid>
+      <description>&lt;h2 id=&#34;migrating-from-wordpress-to-jekyll&#34;&gt;Migrating from Wordpress to Jekyll&lt;/h2&gt;&#xA;&lt;p&gt;Today I have started the migration of my Wordpress website to &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt;. I will also experiment with hosting my site with &lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;.&#xA;Most of the content is already migrated, but there is some manual work left. It could be possible that a few images are missing or layout is a bit weird.&lt;/p&gt;&#xA;&lt;p&gt;My site isn&amp;rsquo;t very big or interesting in general. So I will probably delete some articles and only keep the most useful or interesting ones.&lt;br&gt;&#xA;I mean, who cares that my site got a SSL certificate back in 2014? Ok, back then it wasn&amp;rsquo;t that common, but still. So&amp;hellip; &lt;em&gt;delete post&lt;/em&gt; aaaand it&amp;rsquo;s gone.&#xA;Only a couple of pages left which could be useful for other people.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

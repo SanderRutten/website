@@ -1,0 +1,752 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>My ESPHome / Home Assistant enabled chicken coop door - </title>
+
+  <meta name="description" content="Introduction
+{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.
+In my Home Assistant installation I’m already using the ESPHome integration for other small sensors in my home. So why not make use of ESPHome?">
+  <meta name="author" content="Sander Rutten"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Rutten.me",
+    
+    "url": "http:\/\/192.168.100.49:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/192.168.100.49:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/192.168.100.49:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/192.168.100.49:1313\/post\/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door\/",
+          "name": "My esphome home assistant enabled chicken coop door"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Sander Rutten"
+  },
+  "headline": "My ESPHome \/ Home Assistant enabled chicken coop door",
+  "description" : "Introduction {: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.\nIn my Home Assistant installation I’m already using the ESPHome integration for other small sensors in my home. So why not make use of ESPHome?\n",
+  "inLanguage" : "en",
+  "wordCount":  1171 ,
+  "datePublished" : "2022-07-01T20:14:51\u002b01:00",
+  "dateModified" : "2022-07-01T20:14:51\u002b01:00",
+  "image" : "http:\/\/192.168.100.49:1313\/img\/avatar-icon.png",
+  "keywords" : [ "ESPHome, Home Assistant" ],
+  "mainEntityOfPage" : "http:\/\/192.168.100.49:1313\/post\/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/192.168.100.49:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/192.168.100.49:1313\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="My ESPHome / Home Assistant enabled chicken coop door" />
+<meta property="og:description" content="Introduction
+{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.
+In my Home Assistant installation I’m already using the ESPHome integration for other small sensors in my home. So why not make use of ESPHome?">
+<meta property="og:image" content="http://192.168.100.49:1313/images/2022/07/01/post_image.webp" />
+<meta property="og:url" content="http://192.168.100.49:1313/post/2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Rutten.me" />
+
+  <meta name="twitter:title" content="My ESPHome / Home Assistant enabled chicken coop door" />
+  <meta name="twitter:description" content="Introduction
+{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little …">
+  <meta name="twitter:image" content="http://192.168.100.49:1313/images/2022/07/01/post_image.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link href='http://192.168.100.49:1313/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.140.0">
+  <link rel="alternate" href="http://192.168.100.49:1313/index.xml" type="application/rss+xml" title="Rutten.me"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://192.168.100.49:1313/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://192.168.100.49:1313/css/highlight.min.css" /><link rel="stylesheet" href="http://192.168.100.49:1313/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://192.168.100.49:1313/">Rutten.me</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/page/about/">About</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Tags" href="/tags">Tags</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Rutten.me" href="http://192.168.100.49:1313/">
+            <img class="avatar-img" src="http://192.168.100.49:1313/img/avatar-icon.png" alt="Rutten.me" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1
+      
+         
+          data-img-src-1="/images/2022/07/01/post_image.webp"
+         
+         
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      
+      <div class="intro-header big-img" style="background-image: url('/images/2022/07/01/post_image.webp');">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>My ESPHome / Home Assistant enabled chicken coop door</h1>
+                  
+                  
+                    <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 1, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1171&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sander Rutten
+    
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: none;"></span>
+      </div>
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              
+                <h1>My ESPHome / Home Assistant enabled chicken coop door</h1>
+              
+              
+              
+              
+                <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on July 1, 2022
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;6&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1171&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Sander Rutten
+    
+  
+  
+</span>
+
+
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h2 id="introduction">Introduction</h2>
+<p><a href="/images/2022/07/01/PXL_20220630_161406624.jpg"><img src="/images/2022/07/01/PXL_20220630_161406624-150x150.jpg" alt="Inside the chicken coop"></a>{: .align-right} Since a couple of weeks I have 3 Pekin Bantam hens in my garden. Although it is not a big deal opening and closing the chicken coop door daily, it still is a fun little project to automate this. For example the coop automatically opens at sunrise and closes at sunset.</p>
+<p>In my <a href="https://www.home-assistant.io">Home Assistant</a> installation I’m already using the <a href="https://esphome.io">ESPHome</a> integration for other small sensors in my home. So why not make use of ESPHome?</p>
+<p>The total cost for this project is about 25 euros. I did recycle multiple parts of my old defective 3D printer, therefore I only needed new endstops and the stepper driver.</p>
+<p>In the partlist I added the current (July 2022) prices from AliExpress. I will add a link to the products I <strong>*think*</strong> you can use, although they are slightly different then the ones I already had. See it as a global shopping guideline.</p>
+<p>My chicken coop door is a drawbridge style door. With some adjustments this project can also be used for a sliding door. My first proof-of-concept build was a sliding door, until I realized that I didn’t have the required height…</p>
+<!-- raw HTML omitted -->
+<h2 id="partlist">Partlist</h2>
+<p><a href="/images/2022/07/01/PXL_20220630_161327653.jpg"><img src="/images/2022/07/01/PXL_20220630_161327653-150x150.jpg" alt="NodeMCU and A4988 in a 3D printed case"></a>This is the minimum amount of parts to get your own Home Assistant / ESPHome enabled chicken coop door.</p>
+<p>Guess it is probably a bit over-engineered. But hey, it works 🙂</p>
+<ul>
+<li><a href="https://aliexpress.com/item/1005004242163383.html">NodeMCU v3 CH340</a> (3 euro)</li>
+<li>USB adapter + micro USB cable (5 euro)</li>
+<li><a href="https://aliexpress.com/item/1005003708661308.html">NEMA 17 stepper motor</a> (10 euro)</li>
+<li>Stepper motor wire (Included with motor)</li>
+<li><a href="https://aliexpress.com/item/32918948939.html">Timing belt</a> (1 euro)
+Size: GT2-6mm, 1 meter</li>
+<li><a href="https://aliexpress.com/item/1005002226516848.html">Timing belt gear</a> (1,30 euro)
+20 Teeth Bore 5mm, width 6mm</li>
+<li><a href="https://aliexpress.com/item/1005001621706694.html">A4988 stepper driver</a> (1 euro)</li>
+<li><a href="https://aliexpress.com/item/1005001731366424.html">12V, 2A power supply + DC male connector</a> (3,50 euro)</li>
+<li>Some counterweight attached to the timing belt</li>
+</ul>
+<h2 id="optional--nice-to-have">Optional / Nice to have</h2>
+<ul>
+<li><a href="https://aliexpress.com/item/1005003139255707.html">Endstop</a> (2x) (2,50 euro)</li>
+<li>Momentary button / push button (2x)
+I used a <a href="https://aliexpress.com/item/1005004122367698.html">reset button</a> with a 3D printed arcade button, but a <a href="https://aliexpress.com/item/32681503273.html">premade</a> button will also do fine)</li>
+<li>Chain, 1 meter</li>
+</ul>
+<p><a href="/images/2022/07/01/PXL_20220630_161421819.jpg"><img src="/images/2022/07/01/PXL_20220630_161421819-150x150.jpg" alt="Chicken coop door opened"></a>The endstops are used to stop the stepper motor immediately when they are being pressed, even if the <strong>target</strong> or <strong>open_duration</strong> in the <a href="#ESPHome_YAML_Code">source code</a> below aren’t met.<br>
+If you decide not to use endstops make sure to adjust the <strong>target</strong> and <strong>open_duration</strong> to match as closely as possible. This prevents the stepper motor from continuing spinning while the chicken coop door is already fully opened or closed.</p>
+<p>The buttons are used to manually open or close the chicken coop door. Also useful when your WiFi or HomeAssistant isn’t working. You can always open/close the door.</p>
+<p>The chain is added to prevent the weight of the door to “hang” on the motor constantly, instead the weight is “diverted” by the chain.</p>
+<h2 id="very-optional">Very optional</h2>
+<ul>
+<li>3D printer to print some parts.</li>
+<li>Multimeter (Setting/measuring the voltage reference for the driver)</li>
+<li>Soldering iron (Unless you don’t care about cable length)</li>
+<li><a href="https://aliexpress.com/item/1005001393566382.html">Shrinkable tube</a></li>
+<li><a href="https://aliexpress.com/item/1005001988998580.html">Dupont connectors</a> (I always try to combine wires into a larger connector, feels more stable.)</li>
+</ul>
+<p>The following 3D print models were used. You can of course use others if you like them more.</p>
+<ul>
+<li><a href="https://www.thingiverse.com/thing:3721033">NodeMCU DIY Smart LED Case</a> (Scaled the height / Z axis to 500%)</li>
+<li><a href="https://www.thingiverse.com/thing:1960261">NEMA 17 Mount</a></li>
+<li><a href="https://www.thingiverse.com/thing:2622416">Arcade-style tactile button</a></li>
+</ul>
+<h2 id="wiring">Wiring</h2>
+<p><a href="/images/2022/07/01/Chicken_coop_door.png"><img src="/images/2022/07/01/Chicken_coop_door-150x150.png" alt="Wiring"></a>Here is the schema to connect everything to the NodeMCU.<br>
+The NodeMCU itself is powered via micro USB.
+The A4988 driver is powered by the 12V 2A power supply and connected to the VMOD and GND pins. (Not drawn in the schema)</p>
+<p>The stepper motor cable is connected to the A4988 driver. You need to connect phase 1 to 1A/1B and phase 2 to 2A/2B. Or 1 to 2A/2B and 2 to 1A/1B, this order is less important.<br>
+For some reason the stepper motor I used had the green and blue wires switched. So the phases weren’t wired correctly: 1A/2A and 1B/2B. Not a big deal, I just swapped them in the dupont connector.</p>
+<p>In the schematics I used the (default) wiring order, I assume that this is correct for most motors and that mine was just a bit odd.</p>
+<h2 id="setting-the-correct-vsubref-subvalue">Setting the correct V<!-- raw HTML omitted -->REF <!-- raw HTML omitted -->value</h2>
+<p>It is important to set the correct V<!-- raw HTML omitted -->REF <!-- raw HTML omitted -->value on the A4988 stepper driver. The term V<!-- raw HTML omitted -->REF<!-- raw HTML omitted --> stands for voltage reference, basically the current provided from the driver to the stepper motor. To calculate the correct V<!-- raw HTML omitted -->REF<!-- raw HTML omitted -->, I want to point you to the detailed guide from <a href="https://all3dp.com/2/vref-calculator-tmc2209-tmc2208-a4988/">all3dp</a>. It is not very hard, but they explain it much better.</p>
+<p>Setting the value too low and your stepper motor can skip steps while having it too high can cause overheating and damage the motor. Although our usage isn’t as precise/heavy as a 3D printer. So I can imagine that skipping a few steps or a (short) period overheating isn’t really a big issue. Still better to prevent this.</p>
+<h2 id="esphome-yaml-code">ESPHome YAML Code</h2>
+<p>It was a bit of trial and error to get it working, but in the end the chicken coop is working with the code below. Maybe that it could be done prettier, or maybe it even has some unnecessary code.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">esphome:
+</span></span><span class="line"><span class="cl">  name: esp-chickencoop
+</span></span><span class="line"><span class="cl">  platform: ESP8266
+</span></span><span class="line"><span class="cl">  board: nodemcuv2
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">wifi:
+</span></span><span class="line"><span class="cl">  ssid: !secret wifi_domotica
+</span></span><span class="line"><span class="cl">  password: !secret wifi_domotica_key
+</span></span><span class="line"><span class="cl">  fast_connect: true
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  ap:
+</span></span><span class="line"><span class="cl">    ssid: &#34;ESP Config Chickencoop&#34;
+</span></span><span class="line"><span class="cl">    password: !secret wifi_domotica_key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">captive_portal:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Enable logging
+</span></span><span class="line"><span class="cl">logger:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Enable Home Assistant API
+</span></span><span class="line"><span class="cl">api:
+</span></span><span class="line"><span class="cl">  password: !secret api_key
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">ota:
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">stepper:
+</span></span><span class="line"><span class="cl">  - platform: a4988
+</span></span><span class="line"><span class="cl">    id: chickencoop_door
+</span></span><span class="line"><span class="cl">    step_pin: D3
+</span></span><span class="line"><span class="cl">    dir_pin: D4
+</span></span><span class="line"><span class="cl">    max_speed: 500 steps/s
+</span></span><span class="line"><span class="cl">    acceleration: 50
+</span></span><span class="line"><span class="cl">    deceleration: 100
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">cover:
+</span></span><span class="line"><span class="cl">  - platform: endstop
+</span></span><span class="line"><span class="cl">    name: &#34;Chickencoop&#34;
+</span></span><span class="line"><span class="cl">    id: chickencoop
+</span></span><span class="line"><span class="cl">    device_class: garage
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    open_action:
+</span></span><span class="line"><span class="cl">      - delay: 100ms
+</span></span><span class="line"><span class="cl">      - stepper.report_position:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          position: 0      
+</span></span><span class="line"><span class="cl">      - stepper.set_target:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          target: 2000
+</span></span><span class="line"><span class="cl">      - logger.log: &#34;Chickencoop opening&#34;
+</span></span><span class="line"><span class="cl">    open_duration: 20.0sec
+</span></span><span class="line"><span class="cl">    open_endstop: endstop_bottom
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    close_action:
+</span></span><span class="line"><span class="cl">      - delay: 100ms
+</span></span><span class="line"><span class="cl">      - stepper.report_position:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          position: 0      
+</span></span><span class="line"><span class="cl">      - stepper.set_target:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          target: -2100
+</span></span><span class="line"><span class="cl">      - logger.log: &#34;Chickencoop closing&#34;
+</span></span><span class="line"><span class="cl">    close_duration: 20.0sec
+</span></span><span class="line"><span class="cl">    close_endstop: endstop_top
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    stop_action:
+</span></span><span class="line"><span class="cl">      - stepper.report_position:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          position: 0
+</span></span><span class="line"><span class="cl">      - stepper.set_target:
+</span></span><span class="line"><span class="cl">          id: chickencoop_door
+</span></span><span class="line"><span class="cl">          target: 0
+</span></span><span class="line"><span class="cl">      - delay: 100ms
+</span></span><span class="line"><span class="cl">    max_duration: 15.0sec
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">binary_sensor:
+</span></span><span class="line"><span class="cl">  # Endstop Top / Door fully closed
+</span></span><span class="line"><span class="cl">  - platform: gpio
+</span></span><span class="line"><span class="cl">    name: &#34;endstop_top&#34;
+</span></span><span class="line"><span class="cl">    pin:
+</span></span><span class="line"><span class="cl">      number: D5
+</span></span><span class="line"><span class="cl">      inverted: true
+</span></span><span class="line"><span class="cl">      mode: INPUT_PULLUP
+</span></span><span class="line"><span class="cl">    id: endstop_top
+</span></span><span class="line"><span class="cl">    on_press:
+</span></span><span class="line"><span class="cl">      then:
+</span></span><span class="line"><span class="cl">        - logger.log: &#34;Endstop TOP reached&#34;
+</span></span><span class="line"><span class="cl">        - cover.stop: chickencoop
+</span></span><span class="line"><span class="cl">        - stepper.report_position:
+</span></span><span class="line"><span class="cl">            id: chickencoop_door
+</span></span><span class="line"><span class="cl">            position: 0
+</span></span><span class="line"><span class="cl">        - stepper.set_target:
+</span></span><span class="line"><span class="cl">            id: chickencoop_door
+</span></span><span class="line"><span class="cl">            target: 0
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">  # Endstop Bottom / Door fully opened
+</span></span><span class="line"><span class="cl">  - platform: gpio
+</span></span><span class="line"><span class="cl">    name: &#34;endstop_bottom&#34;
+</span></span><span class="line"><span class="cl">    pin:
+</span></span><span class="line"><span class="cl">      number: D6
+</span></span><span class="line"><span class="cl">      mode: INPUT_PULLUP
+</span></span><span class="line"><span class="cl">      inverted: true
+</span></span><span class="line"><span class="cl">    id: endstop_bottom
+</span></span><span class="line"><span class="cl">    on_press:
+</span></span><span class="line"><span class="cl">      then:
+</span></span><span class="line"><span class="cl">        - logger.log: &#34;Endstop BOTTOM reached&#34;
+</span></span><span class="line"><span class="cl">        - cover.stop: chickencoop
+</span></span><span class="line"><span class="cl">        - stepper.report_position:
+</span></span><span class="line"><span class="cl">            id: chickencoop_door
+</span></span><span class="line"><span class="cl">            position: 0
+</span></span><span class="line"><span class="cl">        - stepper.set_target:
+</span></span><span class="line"><span class="cl">            id: chickencoop_door
+</span></span><span class="line"><span class="cl">            target: 0
+</span></span><span class="line"><span class="cl">            
+</span></span><span class="line"><span class="cl">  # Manual open button
+</span></span><span class="line"><span class="cl">  - platform: gpio
+</span></span><span class="line"><span class="cl">    pin:
+</span></span><span class="line"><span class="cl">      number: D1
+</span></span><span class="line"><span class="cl">      mode: INPUT_PULLUP
+</span></span><span class="line"><span class="cl">      inverted: TRUE
+</span></span><span class="line"><span class="cl">    name: &#34;Chickencoop manual opening&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    filters:
+</span></span><span class="line"><span class="cl">      # Small filter, to debounce the button press.
+</span></span><span class="line"><span class="cl">      - delayed_on: 25ms
+</span></span><span class="line"><span class="cl">      - delayed_off: 25ms
+</span></span><span class="line"><span class="cl">    on_press:
+</span></span><span class="line"><span class="cl">      then:
+</span></span><span class="line"><span class="cl">        cover.open: chickencoop
+</span></span><span class="line"><span class="cl">        
+</span></span><span class="line"><span class="cl">  # Manual close button
+</span></span><span class="line"><span class="cl">  - platform: gpio
+</span></span><span class="line"><span class="cl">    pin:
+</span></span><span class="line"><span class="cl">      number: D2
+</span></span><span class="line"><span class="cl">      mode: INPUT_PULLUP
+</span></span><span class="line"><span class="cl">      inverted: TRUE
+</span></span><span class="line"><span class="cl">    name: &#34;Chickencoop manual closing&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    filters:
+</span></span><span class="line"><span class="cl">      # Small filter, to debounce the button press.
+</span></span><span class="line"><span class="cl">      - delayed_on: 25ms
+</span></span><span class="line"><span class="cl">      - delayed_off: 25ms
+</span></span><span class="line"><span class="cl">    on_press:
+</span></span><span class="line"><span class="cl">      then:
+</span></span><span class="line"><span class="cl">        cover.close: chickencoop
+</span></span></code></pre></div><p>You can add it to the Home Assistant lovelace interface and it shows up as a garage door.</p>
+<p><a href="/images/2022/07/01/Screenshot-2022-07-01-21.10.09.png"><img src="/images/2022/07/01/Screenshot-2022-07-01-21.10.09.png" alt="Chicken coop door in Home Assistant lovelace"></a></p>
+<h2 id="the-residents">The residents</h2>
+<p>And finally… the residents!</p>
+<p>Meet Els, Ans and Bep, here they are chilling at their chicknick table hidding for some rain under an umbrella.</p>
+<p><a href="/images/2022/07/01/PXL_20220626_162037519.jpg"><img src="/images/2022/07/01/PXL_20220626_162037519-1024x771.jpg" alt="Chicknick table, with rain-proof umbrella ;-)"></a></p>
+
+
+        
+          <div class="blog-tags">
+            
+              
+              <a href="http://192.168.100.49:1313/tags/esphome/">ESPHome</a>&nbsp;
+            
+              
+              <a href="http://192.168.100.49:1313/tags/home-assistant/">Home Assistant</a>&nbsp;
+            
+          </div>
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f&amp;text=My%20ESPHome%20%2f%20Home%20Assistant%20enabled%20chicken%20coop%20door&amp;via=" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f&amp;title=My%20ESPHome%20%2f%20Home%20Assistant%20enabled%20chicken%20coop%20door" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f&amp;title=My%20ESPHome%20%2f%20Home%20Assistant%20enabled%20chicken%20coop%20door" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f&amp;title=My%20ESPHome%20%2f%20Home%20Assistant%20enabled%20chicken%20coop%20door" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2f192.168.100.49%3a1313%2fpost%2f2022-07-01-my-esphome-home-assistant-enabled-chicken-coop-door%2f&amp;description=My%20ESPHome%20%2f%20Home%20Assistant%20enabled%20chicken%20coop%20door" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="http://192.168.100.49:1313/post/2018-11-23-unifi-guest-portal-with-ipv6/" data-toggle="tooltip" data-placement="top" title="UniFi Guest Portal with IPv6">&larr; Previous Post</a>
+            </li>
+          
+          
+            <li class="next">
+              <a href="http://192.168.100.49:1313/post/2023-05-02-migrating-to-jekyll/" data-toggle="tooltip" data-placement="top" title="Migrating to Jekyll">Next Post &rarr;</a>
+            </li>
+          
+        </ul>
+      
+
+
+      
+      
+      
+      
+      
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="mailto:sander@rutten.me" title="Email me">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-envelope fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://github.com/sanderrutten" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/srutten1985" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://open.spotify.com/user/nakebod" title="Spotify">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-spotify fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://bsky.app/profile/SanderRutten.bsky.social" title="Bluesky">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-bluesky fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              <a href="rutten.me">Sander Rutten</a>
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2024
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://192.168.100.49:1313/">Rutten.me</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.140.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://192.168.100.49:1313/js/main.js"></script>
+<script src="http://192.168.100.49:1313/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://192.168.100.49:1313/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
