@@ -10,7 +10,7 @@ favicon        = "img/favicon.png"
 SortBy              = "default"
 
 [footer]
-    since      = 2020
+    since      = 1985
     customText = ""
 
 [dateFormat]
@@ -19,39 +19,25 @@ SortBy              = "default"
 
 [sidebar]
     emoji    = "🍥"
-    subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    subtitle = "Hi there."
     avatar   = "img/avatar.png"
 
 [article]
     headingAnchor = false
     math          = false
     readingTime   = true
-
-    [article.license]
-        enabled = true
-        default = "Licensed under CC BY-NC-SA 4.0"
+    toc           = false
 
 [widgets]
     homepage = [
         { type = "search" },
         { type = "archives", params = { limit = 5 } },
-        { type = "categories", params = { limit = 10 } },
-        { type = "tag-cloud", params = { limit = 10 } },
     ]
     page = [{ type = "toc" }]
-
-[opengraph.twitter]
-    site = ""
-    card = "summary_large_image"
 
 [colorScheme]
     toggle  = true
     default = "auto"
-
-## Comments
-[comments]
-    enabled  = true
-    provider = "disqus"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
