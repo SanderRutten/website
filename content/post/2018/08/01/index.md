@@ -5,20 +5,21 @@ title = 'Project Pifi Raspberripi as Travel Router'
 image = 'hero_image.jpg'
 categories = ["Projects", "Technology"]
 tags = ["Travel"]
+toc = "true"
 +++
-# The problem…
+## The problem…
 
 While traveling around and visiting some nice remote campgrounds it sometimes occurs that there is only WiFI at the central building, or it is limited to 1 device only. And if you don’t have much mobile data… Problem!  
 In rare occasions it also happens that cellphone reception is quite eh, non existent 🙂  
 Even with my limited internet usage during holidays I’d like to search/plan trips or send some pictures to family and friends to make them jealous.
 
-# The solution!
+## The solution
 
 ![PiFi](PiFi.png)
 
 Connect the RaspberryPI to the existing network. Setup an accesspoint Pi-Fi. Connect your devices to your Pi-Fi.
 
-# Requirements
+## Requirements
 
 - Raspberry Pi
 - USB WiFi dongle
@@ -29,7 +30,7 @@ Connect the RaspberryPI to the existing network. Setup an accesspoint Pi-Fi. Con
 
 It is recommended to use a Raspberry Pi 3 or newer, these versions have one WiFi adapter built in. Additionally you need one USB WiFi dongle. If you are using an older Raspberry Pi you will need two.
 
-# USB WiFi dongle
+## USB WiFi dongle
 
 ![600Mbps Dual Band 2.4/5Ghz Wireless USB WiFi Network Adapter Antenna 802.11](s-l1600-150x150.jpg)
 I have bought the “[600Mbps Dual Band 2.4/5Ghz Wireless USB WiFi Network Adapter Antenna 802.11](https://www.ebay.com/itm/600Mbps-Dualband-WiFi-Adapter-Dongle-WLAN-Stick-IEEE-802-11b-g-150Mb-USB-2-0/222871146804?hash=item33e427d134)” on eBay for less than 3 euro.
@@ -40,7 +41,7 @@ The USB dongle will be used to receive the existing WiFi network, while the Rasp
 
 It doesn’t really matter which WiFi dongle you buy, as long as the chipset is supported in OpenWRT/LEDE. And no, having Linux support doesn’t guarantee this!
 
-# OpenWRT/LEDE
+## OpenWRT/LEDE
 
 Download the Raspberry Pi image from the [OpenWRT/LEDE website](https://openwrt.org/toh/raspberry_pi_foundation/raspberry_pi). The current version is 17.01.4 LEDE. Choose the correct image, for the Raspberry Pi 3: rpi-3-ext4-sdcard.img.gz. Flash the image with a tool such as [Etcher](https://etcher.io) to a microSD card. Once you are done flashing the image insert it to your Raspberry Pi and power it on.
 
@@ -78,7 +79,7 @@ mv wireless bak.wireless # To create a ‘backup’
 wifi config > wireless # Writes a new ‘wireless’ file.  
 Optional: Restart Luci webinterface via “/etc/init.d/uhttpd restart”.
 
-# The config
+## The config
 
 In the webinterfe go to the page **Network > Wireless**.  
 There are two devices: radio0 and radio1. The radio0 device is your internal wireless adapter and radio1 is the USB wireless adapter.  
@@ -103,7 +104,7 @@ The 192.168.1.x range is quitte popular as a private network range. To prevent p
 In the webinterface go to the page **Network > Interfaces**.  
 Edit the LAN interface and change “IPv4 address” to 10.13.37.1. Yes, very 1337 indeed… After you click on “Save & Apply” you can change your computers static IP address back to DHCP, or a static address in the 10.13.37.x range.
 
-# While on the road
+## While on the road
 
 Every time you visit a place and want to use your Pi-Fi as personal hotspot you will need to join the wireless network. As far as I know you can’t save multiple wireless networks. So when you revisit an old location you need to reconnect your Pi-Fi to the existing network.
 

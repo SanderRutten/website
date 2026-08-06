@@ -1,10 +1,11 @@
 +++
 date = '2026-08-05T19:22:46+02:00'
 draft = false
-title = 'Ebooks Lenen op Linux'
+title = 'E-Books Lenen op Linux'
 image = 'hero_image.jpg'
 categories = ["Technology"]
 tags = ["E-Book", "Linux"]
+toc = "true"
 +++
 ## Boeken lenen bij de bibliotheek op Linux besturingssystemen
 Als je e-books bij bijvoorbeeld de bibliotheek wilt lenen, krijg je vaak te maken met een Adobe DRM beveiligd boek.

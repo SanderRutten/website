@@ -13,4 +13,4 @@ defaultContentLanguage = "en"
 hasCJKLanguage = false
 
 [pagination]
-    pagerSize = 5
+    pagerSize = 10
