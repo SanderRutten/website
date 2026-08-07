@@ -42,31 +42,32 @@ Klik op "Add books" en selecteer het URLLink.acsm bestand. Na enkele seconden ve
 
 ## ePub naar de e-reader
 Je kan nu het ePub bestand naar je e-reader kopieren. Hiervoor zijn meerdere methodes.
+Welke methode je gebruikt maakt niet uit.<br>
 
-1. **Handmatig**
+### Handmatig
 
-    De standaard locatie is /home/username/Calibre Library/auteur/boek/
-    Verbind je e-reader met een kabel en open je file manager. Kopieer het epub bestand handmatig naar je ereader.
+De standaard locatie is /home/username/Calibre Library/auteur/boek/
+Verbind je e-reader met een kabel en open je file manager. Kopieer het epub bestand handmatig naar je ereader.
 
-2. **Via Calibre**
+### Via Calibre
 
-    Sluit je e-reader via een kabel aan op de computer. Na enkele seconden verschijnt in Calibre de knop "Send to device".
-    Selecteer een of meerdere bestanden in Calibre. Send to device.
+Sluit je e-reader via een kabel aan op de computer. Na enkele seconden verschijnt in Calibre de knop "Send to device".
+Selecteer een of meerdere bestanden in Calibre. Send to device.
 
-3. **Via Kobo Cloud plugin**
+### Via de Kobo Cloud plugin
 
-    Via[Kobo Cloud](https://github.com/fsantini/KoboCloud) synchroniseer ik mijn Kobo e-reader. Dit kan o.a. vanaf Nextcloud, Google Drive of Dropbox. 
-    In Google Drive heb ik een gedeelde map eBooks. In Calibre heb ik de Library locatie aangepast naar deze map. Alles wat in Calibre staat wordt hierdoor automatisch gesynchroniseerd naar Google Drive, en via de Kobo Cloud plugin weer naar mijn e-reader.
+Via [Kobo Cloud](https://github.com/fsantini/KoboCloud) synchroniseer ik mijn Kobo e-reader. Dit kan o.a. vanaf Nextcloud, Google Drive of Dropbox. 
+In Google Drive heb ik een gedeelde map eBooks.<br>
+~~In Calibre heb ik de Library locatie aangepast naar deze map. Alles wat in Calibre staat wordt hierdoor automatisch gesynchroniseerd naar Google Drive, en via de Kobo Cloud plugin weer naar mijn e-reader.~~<br>
+Nieuw inzicht: De [Save to Disk](/2026/08/07/calibre-automatiseren/#save-to-disk) optie goed instellen en gebruiken.
 
-4. **Direct via Dropbox integratie (Kobo)**
+### Direct via Dropbox integratie (Kobo)
 
-    Een aantal Kobo e-readers hebben directe ondersteuning voor Dropbox. 
-    Zie [Kobo Help](https://help.kobo.com/hc/nl/articles/360033830114-Boeken-toevoegen-aan-je-eReader-met-Dropbox) voor meer informatie.
-
-    Ook bij deze methode zou je de Calibre Library locatie kunnen aanpassen naar je Dropbox folder. (Waarschijnlijk /home/username/dropbox/Apps/Rakuten Kobo/)
-    Zelf gebruik ik deze methode niet, dus ik weet niet zeker of het werkt met de submappen die Calibre aanmaakt.
-
-Methodes 3 en 4, de Library "in de cloud" zetten worden door Calibre niet aangeraden, maar werken wel. Op eigen risico.
+Een aantal Kobo e-readers hebben directe ondersteuning voor Dropbox. 
+Zie de [Kobo Help](https://help.kobo.com/hc/nl/articles/360033830114-Boeken-toevoegen-aan-je-eReader-met-Dropbox) pagina voor meer informatie.
+<br>
+~~Ook bij deze methode zou je de Calibre Library locatie kunnen aanpassen naar je Dropbox folder. (Waarschijnlijk /home/username/dropbox/Apps/Rakuten Kobo/)~~<br>
+Nieuw inzicht: De [Save to Disk](/2026/08/07/calibre-automatiseren/#save-to-disk) optie goed instellen en gebruiken.
 
 ## DRM blijft behouden
 Deze methode verwijderd DRM niet. Dat is ook niet het doel van DeACSM.
