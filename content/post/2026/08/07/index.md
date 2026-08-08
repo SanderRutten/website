@@ -9,7 +9,7 @@ toc = "true"
 +++
 ## ePub mist afbeelding op Kobo
 Al jaren loop ik tegen het probleem aan dat bij de bibliotheek geleende e-Books in het .epub formaat geen omslagafbeelding laten zien op mijn Kobo e-reader. Dit terwijl bijvoorbeeld Calibre de omslagafbeelding wel laat zien.
-Gekochte boeken bij ![Bol](https://bol.com) werken wel. Zover ik weet komen die direct uit de ![Kobo Store](https://www.kobo.com) en zijn dat onderliggend kepub bestanden en geen epub.
+Gekochte boeken bij [Bol](https://bol.com) werken wel. Zover ik weet komen die direct uit de [Kobo Store](https://www.kobo.com) en zijn dat onderliggend kepub bestanden en geen epub.
 En daarin zit het verschil.
 
 Het formaat kepub, niet geheel verrassend Kobo ePub, werkt net iets beter op Kobo e-readers dan normale ePub bestanden.
@@ -23,7 +23,7 @@ Wil je nu naar een ander bestandsformaat converteren krijg je te maken met de DR
 ![DRM Beveiligd](drm_convert.jpg)
 
 Alleen... mag je de DRM beveiliging omzeilen?
-Diverse bronnen halen de ![Auteurswet artikel 29a](https://wetboek.org/aw/29a) aan.
+Diverse bronnen halen de [Auteurswet artikel 29a](https://wetboek.org/aw/29a) aan.
 >Degene, die doeltreffende technische voorzieningen omzeilt en dat weet of redelijkerwijs behoort te weten, handelt onrechtmatig.
 
 Kortgezegd: Nee, DRM beveiliging mag je niet verwijderen. Ook niet voor eigen gebruik.

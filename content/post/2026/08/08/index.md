@@ -11,6 +11,7 @@ toc = "true"
 In het vorige artikel [ePub omzetten naar kepub](/2026/08/07/e-books-omzetten-naar-kepub/) is beschreven hoe je op een Kobo e-reader weer omslagafbeeldingen krijg. En in [ePub naar de e-reader](/2026/08/05/e-books-lenen-op-linux/#epub-naar-de-e-reader) leg ik twee methodes uit om de boeken via de cloud te synchroniseren. Hiervoor synchroniseer ik de gehele Calibre Library naar Google Drive. Zoals beschreven is dat echter niet aangeraden door Calibre.
 
 Inmiddels heb ik wat nieuwe inzichten en is mijn werkwijze veranderd. Meer handelingen automatiseren, minder handwerk!
+In onderstaande stappen gaan we automatisch epubs converteren naar kepub, en slaan we die op in een map die met een cloud opslagprovider wordt gesynchroniseerd. Deze laateste stap kan je uiteraard ook doen als je alleen met ePub bestanden werkt, zonder deze bestanden eerst te converteren.
 
 ## Automatisch converteren naar kepub
 Stel eerst het gewenste output formaat in op kepub. Ga naar *Preferences > Interface > Behavior*.
