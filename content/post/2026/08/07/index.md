@@ -24,7 +24,9 @@ Wil je nu naar een ander bestandsformaat converteren krijg je te maken met de DR
 
 Alleen... mag je de DRM beveiliging omzeilen?
 Diverse bronnen halen de [Auteurswet artikel 29a](https://wetboek.org/aw/29a) aan.
->Degene, die doeltreffende technische voorzieningen omzeilt en dat weet of redelijkerwijs behoort te weten, handelt onrechtmatig.
+
+> [!WARNING]
+> Degene, die doeltreffende technische voorzieningen omzeilt en dat weet of redelijkerwijs behoort te weten, handelt onrechtmatig.
 
 Kortgezegd: Nee, DRM beveiliging mag je niet verwijderen. Ook niet voor eigen gebruik.
 Daarom geen directe linkjes in dit artikel, maar alleen de theorie.
