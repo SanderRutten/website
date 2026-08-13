@@ -41,3 +41,15 @@ SortBy              = "default"
 
     # See all the available configurations at https://github.com/CaiJimmy/hugo-theme-stack/blob/master/config/_default/params.toml
     # Copy the configurations you need from there and paste it here.
+
+[comments]
+    enabled  = true
+    provider = "remark42"
+
+    [comments.remark42]
+        host                    = "https://comments.rutten.me"
+        site                    = "remark_website_comments"
+        locale                  = "en"
+        max_shown_comments      = 15
+        show_email_subscription = false
+        no_footer               = true
