@@ -5,7 +5,6 @@ title = 'GL-iNet WireGuard + dnsmasq: address in use'
 image = 'hero_image.jpg'
 categories = ["Technology"]
 tags = ["Travel"]
-toc = "false"
 +++
 ## GL-SFT1200
 I recently acquired a GL-iNet GL-SFT1200 travel router, firmware 4.8.3. A bit older model, but suitable for my occasional needs.
