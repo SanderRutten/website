@@ -7,4 +7,11 @@ image: hero_image.jpg
 style:
     background: "#3be415"
     color: "#fff"
+
+menu: 
+    main:
+        name: Projecten
+        weight: 3
+        params:
+            icon: notes
 ---

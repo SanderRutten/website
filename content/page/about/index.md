@@ -1,6 +1,6 @@
 ---
 image: 'hero_image.jpg'
-title: 'About'
+title: 'About me'
 layout: "single"
 menu:
     main:
