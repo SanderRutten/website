@@ -4,7 +4,7 @@ draft = false
 title = 'AliasVault Password Manager'
 image = 'hero_image.jpg'
 categories = ["Technology","Projects"]
-tags = ["Privacy","Password","Docker"]
+tags = ["Privacy","Password","Docker", "Wachtwoord"]
 toc = "true"
 +++
 ## AliasVault
@@ -49,7 +49,7 @@ De veiligste optie is via een eigen (sub)domein. Je bent dan minder afhankelijk 
 Met een eigen (sub)domein maak je de keuze om de ingebouwde SMTP server te gebruiken, of je laat alle e-mail in een catch-all mailbox binnenkomen. Als je kiest om e-mail via AliasVault af te handelen: E-mails worden encrypted opgeslagen en alleen leesbaar voor de gebruiker zelf. De admin kan de inhoud niet lezen.
 
 Heb je meerdere gebruikers dan is de ingebouwde SMTP server aan te raden: Gebruikers kunnen binnenkomende mail lezen via de AliasVault client. Het is niet mogelijk om de binnekomende e-mail in een extern mailprogramma te lezen. Wil je dit wel, of kunnen benantwoorden op e-mails, dan kan je kiezen voor een catch-all mailbox waarop alles binnenkomt.
-> [!NOTE]
+> [!NOTE] Opmerking
 > Ben je enig gebruiker is een catch-all mailbox geen probleem, met meerdere gebruikers moet je je wel bedenken dat iedereen die je toegang geeft dan alle mail kan zien die daarop binnenkomt.
 
 ## Beginnen met AliasVault 
